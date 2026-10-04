@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WebVibe is a high-growth digital marketing agency specializing in SEO, SMO, Custom Website Creation, Visual Branding, and Kinetic Video Editing. Crafting premium first impressions online.">
+  <meta name="keywords" content="digital marketing agency, SEO services, custom web development, visual branding, video editing, student portfolio website, webvibe">
+  <meta name="author" content="WebVibe Digital Marketing">
+  
+  <link rel="canonical" href="https://webvibe.online/">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://webvibe.online/">
+  <meta property="og:title" content="WebVibe | Your First Impression - Premium Digital Marketing &amp; Web Development">
+  <meta property="og:description" content="We scale your digital footprint through search engine dominance, bespoke custom websites, visual identity branding, and kinetic video editing.">
+  <meta property="og:image" content="https://webvibe.online/hero-real-story.jpg">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="WebVibe | Your First Impression - Premium Digital Marketing &amp; Web Development">
+  <meta name="twitter:description" content="We scale your digital footprint through search engine dominance, bespoke custom websites, visual identity branding, and kinetic video editing.">
+  <meta name="twitter:image" content="https://webvibe.online/hero-real-story.jpg">
+
+  <!-- Favicon setup -->
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  
+  <title>WebVibe | Your First Impression - Premium Digital Marketing &amp; Web Creation</title>
+  
+  <!-- Security Headers -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="preload" href="style.css" as="style">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JSON-LD Structured Data Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "WebVibe Digital",
+    "url": "https://webvibe.online",
+    "logo": "https://webvibe.online/logo-full.png",
+    "email": "webvibe.digitalmarketing@gmail.com",
+    "sameAs": [
+      "https://www.instagram.com/webvibe.digitalmarketing/",
+      "https://www.linkedin.com/company/webvibe-digitalmarketing/"
+    ],
+    "description": "High-growth freelancing agency specializing in SEO, SMO, Custom Web Creation, Branding, and Video Editing."
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Custom Cursor & Background Canvas -->
+  <div class="custom-cursor" id="custom-cursor"></div>
+  <div class="custom-cursor-dot" id="custom-cursor-dot"></div>
+  <canvas id="dot-grid-canvas"></canvas>
+
+  <div class="radial-glows">
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+    <div class="glow-orb glow-orb-3"></div>
+  </div>
+
+  <!-- PREMIUM STICKY HEADER -->
+  <header id="main-header">
+    <a href="index.html" class="logo-container">
+      <img src="logo-full.png" alt="WebVibe Logo" class="logo-img">
+    </a>
+
+    <!-- Navigation links to dedicated sub-pages -->
+    <nav id="nav-menu">
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="student-portfolio.html" style="color: var(--color-gold); font-weight: 700;">Student Offer 🎓</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="estimator.html">Estimator</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-controls">
+        <a href="https://api.whatsapp.com/send?phone=916384155212&text=Hi%20WebVibe,%20I%20want%20to%20discuss%20a%20project!" target="_blank" class="btn-primary" style="background-color: #25D366; border-color: var(--color-navy);">Chat on WhatsApp 💬</a>
+      </div>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- 4. HIGH-IMPACT HERO SECTION (STORYTELLING REAL-LIFE PHOTOGRAPHY) -->
+  <section class="hero" id="hero">
+    <div class="hero-split-wrapper">
+      
+      <!-- Text content left -->
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span class="badge-text" data-cms="hero-badge">Every Brand Has A Story To Tell</span>
+        </div>
+        <h1>
+          <span class="text-gradient" data-cms="hero-title">We Craft Your First Impression Online.</span>
+        </h1>
+        <p class="hero-subtitle">
+          <span data-cms="hero-description">Turning bold visions into authentic digital legacies. We scale your digital footprint through</span> 
+          <span id="typed-text" class="text-gradient" style="font-weight: 700;"></span><span class="typed-cursor">|</span>
+        </p>
+
+        <!-- Quick Reply WhatsApp Banner -->
+        <div class="whatsapp-quick-reply-banner" style="margin-top: 1rem; background: #25D366; color: #ffffff; padding: 10px 18px; border-radius: 30px; font-weight: 800; font-size: 0.88rem; display: inline-flex; align-items: center; gap: 10px; box-shadow: 3px 3px 0px var(--color-navy); border: 2px solid var(--color-navy);">
+          <span>💬 For quick reply, try WhatsApp!</span>
+          <a href="https://api.whatsapp.com/send?phone=916384155212&text=Hi%20WebVibe,%20I%20want%20a%20quick%20reply!" target="_blank" style="color: #ffffff; text-decoration: underline;">Chat Now &rarr;</a>
+        </div>
+
+        <div class="hero-cta" style="margin-top: 1.8rem;">
+          <a href="services.html" class="btn-primary">Explore Services ⚡</a>
+          <a href="student-portfolio.html" class="btn-secondary">Student Offer 🎓</a>
+        </div>
+      </div>
+      
+      <!-- Real-Life Storytelling Photography Panel -->
+      <div class="hero-visual-panel">
+        <div class="hero-graphic-card real-photo-frame">
+          <img src="hero-real-story.jpg" alt="WebVibe Digital Marketing Team Collaborating" class="hero-graphic-img real-story-img">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Infinite text marquee -->
+  <div class="hero-tag-carousel-wrapper">
+    <div class="hero-tag-carousel">
+      <div class="tag-slider-track">
+        <span class="tag-item">Search Engine Optimization</span>
+        <span class="tag-item">Social Media Domination</span>
+        <span class="tag-item">Custom Web Assets</span>
+        <span class="tag-item">Identity &amp; Branding</span>
+        <span class="tag-item">Kinetic Video Editing</span>
+        <span class="tag-item">High-Conversion Copywriting</span>
+        <span class="tag-item">Search Engine Optimization</span>
+        <span class="tag-item">Social Media Domination</span>
+        <span class="tag-item">Custom Web Assets</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HOT OFFER FEATURE CALLOUT BANNER -->
+  <section class="section-padding" style="padding-bottom: 1rem;">
+    <div class="glass-card offer-banner-card reveal-fade-up" style="background: linear-gradient(135deg, rgba(12,37,78,0.95), rgba(7,22,48,0.98)); border: 2.5px solid var(--color-gold); padding: 2.2rem 2.5rem; border-radius: 20px; box-shadow: 6px 6px 0px var(--color-gold); color: #ffffff;">
+      <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.5rem;">
+        <div style="max-width: 650px;">
+          <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(241,178,2,0.2); border: 1px solid var(--color-gold); color: var(--color-gold); padding: 4px 12px; border-radius: 30px; font-weight: 800; font-size: 0.8rem; margin-bottom: 0.8rem;">
+            <span>🔥 SPECIAL HOT OFFER</span> • <span>From Classroom to Career</span>
+          </div>
+          <h3 style="font-size: clamp(1.4rem, 3vw, 1.8rem); font-family: var(--font-heading); font-weight: 800; margin-bottom: 0.5rem; color: #ffffff;">
+            Get Noticed: Professional Portfolio Solution for Students &amp; Brands
+          </h3>
+          <p style="font-size: 0.95rem; color: #cbd5e1; margin: 0;">
+            Showcase your skills, capstone projects, and unique story with custom dynamic web portfolios. Tailored packages for Students, MBA/Tech Grads, Freshers, and Commercial Brands.
+          </p>
+        </div>
+        <div>
+          <a href="student-portfolio.html" class="btn-primary" style="white-space: nowrap; font-size: 1rem; padding: 0.9rem 1.8rem;">
+            Explore Portfolio Packages 🚀
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES OVERVIEW TEASERS GRID (Click to view full content on services.html) -->
+  <section class="section-padding" id="services">
+    <div class="section-header reveal-fade-up">
+      <span class="section-tag">Core Capabilities</span>
+      <h2 class="section-title">Growth-Driven Services Engineered for Results</h2>
+      <p style="color: var(--text-secondary); max-width: 600px; margin: 0.5rem auto 0 auto;">Click on any service card to view complete feature checklists and interactive widgets.</p>
+    </div>
+
+    <div class="dashboard-grid reveal-fade-up" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
+      
+      <!-- Service 1 Teaser -->
+      <div class="glass-card value-pillar-card" data-cms-service>
+        <div class="pillar-icon">📈</div>
+        <h3>SEO &amp; SMO Growth</h3>
+        <p>Drive your business to Page 1 of Google and dominate social media platforms with search-focused content hooks.</p>
+        <a href="services.html#bento-seo" class="btn-secondary" style="margin-top: 1.2rem; display: inline-block; font-size: 0.85rem;">View SEO Frameworks &rarr;</a>
+      </div>
+
+      <!-- Service 2 Teaser -->
+      <div class="glass-card value-pillar-card" data-cms-service>
+        <div class="pillar-icon">💻</div>
+        <h3>Custom Web Creation</h3>
+        <p>Ultra-fast loading, fully responsive, zero-dependency websites built with modern semantic code for maximum conversion.</p>
+        <a href="services.html#bento-web" class="btn-secondary" style="margin-top: 1.2rem; display: inline-block; font-size: 0.85rem;">View Web Creation &rarr;</a>
+      </div>
+
+      <!-- Service 3 Teaser -->
+      <div class="glass-card value-pillar-card" data-cms-service>
+        <div class="pillar-icon">🎨</div>
+        <h3>Visual Identity &amp; Branding</h3>
+        <p>Bespoke logos, design kits, and visual identity guidelines that set a strong rhythm for your company.</p>
+        <a href="services.html#bento-branding" class="btn-secondary" style="margin-top: 1.2rem; display: inline-block; font-size: 0.85rem;">View Branding Systems &rarr;</a>
+      </div>
+
+      <!-- Service 4 Teaser -->
+      <div class="glass-card value-pillar-card" data-cms-service>
+        <div class="pillar-icon">🎬</div>
+        <h3>Cinematic Editing &amp; Assets</h3>
+        <p>High-retention Reels, TikToks, and YouTube video editing with kinetic subtitles and sound design mastering.</p>
+        <a href="services.html#bento-editing" class="btn-secondary" style="margin-top: 1.2rem; display: inline-block; font-size: 0.85rem;">View Video Editing &rarr;</a>
+      </div>
+
+    </div>
+    
+    <div style="text-align: center; margin-top: 2.5rem;">
+      <a href="services.html" class="btn-primary" style="padding: 0.9rem 2rem;">Explore Full Services Catalog ⚡</a>
+    </div>
+  </section>
+
+  <!-- FEATURED WORK PREVIEW (Click to view full work on work.html) -->
+  <section class="section-padding" id="projects" style="background-color: #ffffff; border-top: 2.5px solid #0c254e; border-bottom: 2.5px solid #0c254e;">
+    <div class="section-header reveal-fade-up">
+      <span class="section-tag">Featured Work</span>
+      <h2 class="section-title">Client Case Studies &amp; Success Stories</h2>
+      <p style="color: var(--text-secondary); max-width: 600px; margin: 0.5rem auto 0 auto;">See how we transformed search presence and conversion metrics for our clients.</p>
+    </div>
+
+    <div class="projects-grid reveal-fade-up">
+      <!-- Project 1 -->
+      <div class="glass-card project-card">
+        <div class="project-image-container">
+          <img src="project-organicroots.jpg" alt="OrganicRoots India SEO & SMO Campaign" class="project-img" loading="lazy">
+        </div>
+        <div class="project-details-panel">
+          <span class="project-category">SEO &amp; SMO Campaign</span>
+          <h4>OrganicRoots India</h4>
+          <p>Scaled organic traffic by +240% using search growth frameworks and high-retention reel pacing.</p>
+          <a href="work.html" class="project-link">
+            <span>Read Full Case Study</span>
+            <svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="glass-card project-card">
+        <div class="project-image-container">
+          <img src="project-apexflow.jpg" alt="ApexFlow Enterprise Dashboard" class="project-img" loading="lazy">
+        </div>
+        <div class="project-details-panel">
+          <span class="project-category">Custom Web Dev</span>
+          <h4>ApexFlow Enterprise</h4>
+          <p>Zero-dependency SaaS web dashboard with active chart widgets, yielding 65% faster loading speed.</p>
+          <a href="work.html" class="project-link">
+            <span>Read Full Case Study</span>
+            <svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 2.5rem;">
+      <a href="work.html" class="btn-primary" style="padding: 0.9rem 2rem;">Explore All Case Studies &amp; Work 🚀</a>
+    </div>
+  </section>
+
+  <!-- ESTIMATOR TEASER -->
+  <section class="section-padding" id="estimator-teaser">
+    <div class="section-header reveal-fade-up">
+      <span class="section-tag">Interactive Scope</span>
+      <h2 class="section-title">Calculate Your Project Valuation</h2>
+      <p style="color: var(--text-secondary); max-width: 600px; margin: 0.5rem auto 0 auto;">Select core services and retainer duration in Rupee (INR) with term discounts.</p>
+    </div>
+
+    <div style="text-align: center; margin-top: 1.5rem;">
+      <a href="estimator.html" class="btn-primary" style="padding: 1rem 2.2rem; font-size: 1.05rem;">Launch Scope Estimator Calculator ⚡</a>
+    </div>
+  </section>
+
+  <!-- CONTACT & LEAD CAPTURE SECTION -->
+  <section class="section-padding" id="contact" style="border-top: 2.5px solid #0c254e;">
+    <div class="contact-section-wrapper">
+      
+      <!-- Info Left Column -->
+      <div class="contact-info-panel reveal-fade-up">
+        <div>
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title" style="margin-bottom: 1.5rem;">Start Your Growth Journey.</h2>
+          <p class="contact-info-desc">Have a project in mind or want to scale your search presence? Fill out the inquiry form below or chat directly on WhatsApp.</p>
+          
+          <ul class="contact-details">
+            <li class="contact-detail-item">
+              <div class="detail-icon" style="background-color: #25D366; color: #ffffff;">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.704 1.459h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </div>
+              <div class="detail-text">
+                <h5>Primary Lead Channel (WhatsApp)</h5>
+                <p><a href="https://api.whatsapp.com/send?phone=916384155212&text=Hi%20WebVibe,%20I%20want%20to%20discuss%20a%20project!" target="_blank" class="contact-email-link" style="color: #25D366; font-weight: 800;">+91 6384155212 (⚡ Instant Quick Reply)</a></p>
+              </div>
+            </li>
+            <li class="contact-detail-item">
+              <div class="detail-icon">
+                <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zM22 6l-10 7L2 6"/></svg>
+              </div>
+              <div class="detail-text">
+                <h5>Email Us Directly</h5>
+                <p><a href="mailto:webvibe.digitalmarketing@gmail.com" class="contact-email-link">webvibe.digitalmarketing@gmail.com</a></p>
+              </div>
+            </li>
+            <li class="contact-detail-item">
+              <div class="detail-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              </div>
+              <div class="detail-text">
+                <h5>Location</h5>
+                <p>Remote, India</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Lead capture form card -->
+      <div class="glass-card contact-form-panel reveal-fade-up">
+        <h3 class="contact-form-title">Launch Project</h3>
+        
+        <div style="background-color: rgba(37,211,102,0.12); border: 1.5px solid #25D366; padding: 10px 14px; border-radius: 12px; margin-bottom: 1.2rem; font-size: 0.85rem; color: var(--color-navy); display: flex; align-items: center; justify-content: space-between; gap: 8px;">
+          <span>⚡ <strong>For quick reply, try WhatsApp!</strong></span>
+          <a href="https://api.whatsapp.com/send?phone=916384155212&text=Hi%20WebVibe,%20I%20want%20a%20quick%20reply%20for%20my%20project!" target="_blank" class="btn-primary" style="background-color: #25D366; border-color: var(--color-navy); padding: 5px 12px; font-size: 0.78rem; text-transform: none;">Chat Now 💬</a>
+        </div>
+
+        <form id="lead-contact-form" novalidate>
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+          
+          <div class="form-grid">
+            <div class="form-group">
+              <input type="text" id="contact-name" name="name" class="form-input" placeholder=" " required>
+              <label for="contact-name" class="form-label">Full Name *</label>
+              <span class="form-status">This field is required.</span>
+            </div>
+            <div class="form-group">
+              <input type="email" id="contact-email" name="email" class="form-input" placeholder=" " required>
+              <label for="contact-email" class="form-label">Email Address *</label>
+              <span class="form-status">Please enter a valid email address.</span>
+            </div>
+            <div class="form-group">
+              <input type="text" id="contact-company" name="company" class="form-input" placeholder=" ">
+              <label for="contact-company" class="form-label">Company Name</label>
+            </div>
+            <div class="form-group">
+              <input type="text" id="contact-service" name="service" class="form-input" placeholder=" ">
+              <label for="contact-service" class="form-label">Desired Scope (e.g. SEO, Web)</label>
+            </div>
+            <div class="form-group col-full">
+              <textarea id="contact-msg" name="message" class="form-input" placeholder=" " required></textarea>
+              <label for="contact-msg" class="form-label">Share your project goals... *</label>
+              <span class="form-status">This field is required.</span>
+            </div>
+          </div>
+          
+          <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem;">
+            <button type="submit" class="btn-primary form-submit-btn" style="flex: 1; min-width: 200px;">Request Free Proposal ⚡</button>
+            <a href="https://api.whatsapp.com/send?phone=916384155212&text=Hi%20WebVibe,%20I%20am%20interested%20in%20a%20digital%20marketing/web%20project!" target="_blank" class="btn-primary" style="background-color: #25D366; border-color: var(--color-navy); flex: 1; min-width: 200px; text-align: center; justify-content: center; display: inline-flex; align-items: center;">Instant WhatsApp Inquiry 💬</a>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TRANSMISSION POPUP TOAST -->
+  <div class="toast-container">
+    <div class="toast" id="success-toast" role="alert" aria-live="polite">
+      <div class="toast-icon">
+        <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+      </div>
+      <div class="toast-details">
+        <h4>Request Transmitted!</h4>
+        <p>Your details have been submitted. Our team will get back to you shortly.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer style="border-top: 2.5px solid #0c254e;">
+    <div class="footer-top">
+      <div class="footer-brand-column">
+        <a href="index.html" class="logo-container" style="margin-bottom: 1.5rem;">
+          <img src="logo-icon.png" alt="WebVibe Icon" class="logo-footer-img" loading="lazy">
+          <span class="logo-footer-text">WebVibe</span>
+        </a>
+        <p class="footer-brand-desc">A premium digital agency engineering high-performance web applications and search dominance frameworks.</p>
+      </div>
+
+      <div class="footer-links-column">
+        <h4>Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="student-portfolio.html">Student Offer 🎓</a></li>
+          <li><a href="estimator.html">Estimator</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact-column">
+        <h4>Contact &amp; Support</h4>
+        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem;">Direct email: webvibe.digitalmarketing@gmail.com</p>
+        <a href="https://api.whatsapp.com/send?phone=916384155212" target="_blank" class="btn-primary" style="background-color: #25D366; border-color: var(--color-navy); font-size: 0.85rem; padding: 0.6rem 1.2rem;">Chat on WhatsApp 💬</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 WebVibe Digital. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <a href="https://api.whatsapp.com/send?phone=916384155212" class="whatsapp-float" rel="noopener noreferrer" aria-label="Chat with WebVibe on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.704 1.459h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="script.js" defer></script>
+<script src="cms-loader.js"></script>
+</body>
+</html>

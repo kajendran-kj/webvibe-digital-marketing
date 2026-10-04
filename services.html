@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore WebVibe Services: High-impact SEO & SMO growth frameworks, bespoke zero-dependency custom web development, visual identity branding, and kinetic video editing.">
+  <meta name="keywords" content="digital marketing services, SEO growth, SMO strategy, custom web development, visual branding, kinetic video editing, webvibe services">
+  <meta name="author" content="WebVibe Digital Marketing">
+  
+  <link rel="canonical" href="https://webvibe.online/services.html">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://webvibe.online/services.html">
+  <meta property="og:title" content="Growth-Driven Services | WebVibe Digital Agency">
+  <meta property="og:description" content="High-growth SEO, Custom Web Creation, Branding, and Video Editing engineered for results.">
+  <meta property="og:image" content="https://webvibe.online/hero-real-story.jpg">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Growth-Driven Services | WebVibe Digital Agency">
+  <meta name="twitter:description" content="High-growth SEO, Custom Web Creation, Branding, and Video Editing engineered for results.">
+  <meta name="twitter:image" content="https://webvibe.online/hero-real-story.jpg">
+
+  <!-- Favicon setup -->
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  
+  <title>Growth-Driven Services | SEO, Web Creation, Branding &amp; Editing | WebVibe</title>
+  
+  <!-- Security Headers -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="preload" href="style.css" as="style">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JSON-LD Structured Data Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Digital Marketing & Web Development Services",
+    "provider": {
+      "@type": "Organization",
+      "name": "WebVibe Digital",
+      "url": "https://webvibe.online",
+      "logo": "https://webvibe.online/logo-full.png"
+    },
+    "areaServed": "Global",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "WebVibe Core Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "SEO & SMO Growth Frameworks",
+            "description": "Organic search engine optimization and social media reach."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Custom Web Creation",
+            "description": "Ultra-fast loading zero dependency responsive websites."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Visual Branding & Identity",
+            "description": "Logos, visual design systems, and brand guidelines."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Cinematic Editing & Assets",
+            "description": "Kinetic subtitles, reel pacing, and video content production."
+          }
+        }
+      ]
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Custom Cursor & Canvas Background -->
+  <div class="custom-cursor" id="custom-cursor"></div>
+  <div class="custom-cursor-dot" id="custom-cursor-dot"></div>
+  <canvas id="dot-grid-canvas"></canvas>
+
+  <div class="radial-glows">
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+    <div class="glow-orb glow-orb-3"></div>
+  </div>
+
+  <!-- PREMIUM STICKY HEADER -->
+  <header id="main-header">
+    <a href="index.html" class="logo-container">
+      <img src="logo-full.png" alt="WebVibe Logo" class="logo-img">
+    </a>
+
+    <nav id="nav-menu">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="student-portfolio.html" style="color: var(--color-gold); font-weight: 700;">Student Offer 🎓</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="estimator.html">Estimator</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-controls">
+        <a href="https://api.whatsapp.com/send?phone=916384155212&text=Hi%20WebVibe,%20I%20want%20to%20inquire%20about%20your%20services!" target="_blank" class="btn-primary" style="background-color: #25D366; border-color: var(--color-navy);">Chat on WhatsApp 💬</a>
+      </div>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="services-hero">
+    <div class="hero-split-wrapper">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span class="badge-text">Growth-Driven Services</span>
+        </div>
+        <h1>
+          <span class="text-gradient">Engineered for Results.</span><br>
+          <span class="text-gradient">Designed to Convert.</span>
+        </h1>
+        <p class="hero-subtitle">
+          From search engine dominance to high-speed web creation and kinetic video editing, we engineer digital solutions that scale your business.
+        </p>
+
+        <!-- Quick Reply WhatsApp Banner -->
+        <div class="whatsapp-quick-reply-banner" style="margin-top: 1.2rem; background: #25D366; color: #ffffff; padding: 10px 18px; border-radius: 30px; font-weight: 800; font-size: 0.88rem; display: inline-flex; align-items: center; gap: 10px; box-shadow: 3px 3px 0px var(--color-navy); border: 2px solid var(--color-navy);">
+          <span>💬 For quick reply, try WhatsApp!</span>
+          <a href="https://api.whatsapp.com/send?phone=916384155212&text=Hi%20WebVibe,%20I%20want%20a%20quick%20reply%20regarding%20your%20services!" target="_blank" style="color: #ffffff; text-decoration: underline;">Chat Now &rarr;</a>
+        </div>
+
+        <div class="hero-cta" style="margin-top: 1.8rem;">
+          <a href="estimator.html" class="btn-primary">Calculate Scope ⚡</a>
+          <a href="work.html" class="btn-secondary">View Case Studies 🚀</a>
+        </div>
+      </div>
+
+      <div class="hero-visual-panel">
+        <div class="hero-graphic-card real-photo-frame">
+          <img src="hero-real-story.jpg" alt="WebVibe Digital Marketing Team Collaborating" class="hero-graphic-img real-story-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ASYMMETRIC BENTO GRID: DETAILED SERVICES -->
+  <section class="section-padding" id="services-catalog">
+    <div class="section-header reveal-fade-up">
+      <span class="section-tag">Services Catalog</span>
+      <h2 class="section-title">Comprehensive Growth Solutions</h2>
+    </div>
+
+    <div class="bento-grid">
+      
+      <!-- BENTO CARD 1: SEO & SMO -->
+      <div class="glass-card bento-card col-wide reveal-fade-up" id="bento-seo">
+        <div class="card-top">
+          <div class="card-icon-container">
+            <svg viewBox="0 0 24 24"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+          </div>
+          <a href="estimator.html" class="card-arrow" aria-label="Estimate SEO & SMO project scope">
+            <svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+          </a>
+        </div>
+        <div class="card-info">
+          <h3>SEO &amp; SMO Growth Frameworks</h3>
+          <p>We drive your business to page 1 of Google and establish high-impact reach on LinkedIn, Instagram, and key digital channels. Organic growth powered by market insights and algorithmic precision.</p>
+          
+          <div class="seo-features-row">
+            <div class="seo-feature-pill">
+              <span class="seo-pill-icon">📈</span>
+              <div class="seo-pill-text"><strong>+240%</strong><span>Search Traffic</span></div>
+            </div>
+            <div class="seo-feature-pill">
+              <span class="seo-pill-icon">🔥</span>
+              <div class="seo-pill-text"><strong>#1 Rank</strong><span>Target Keywords</span></div>
+            </div>
+            <div class="seo-feature-pill">
+              <span class="seo-pill-icon">⚡</span>
+              <div class="seo-pill-text"><strong>5.8x</strong><span>CTR Boost</span></div>
+            </div>
+          </div>
+          
+          <ul class="seo-checklist">
+            <li class="seo-check-item" data-index="0">
+              <div class="check-item-header"><span>🔍</span> Technical Audit &amp; Core Web Vitals</div>
+              <div class="seo-details">
+                <p>Advanced diagnostic checks to ensure search crawler accessibility and core performance scoring.</p>
+                <div class="seo-keyword-pills">
+                  <span>LCP &amp; CLS</span><span>TTFB</span><span>CSS Minification</span><span>Caching</span>
+                </div>
+              </div>
+            </li>
+            <li class="seo-check-item" data-index="1">
+              <div class="check-item-header"><span>⚙️</span> Semantic Keyword &amp; Competitor Mapping</div>
+              <div class="seo-details">
+                <p>Finding high-intent organic terms and executing comprehensive SERP competitor gap audits.</p>
+                <div class="seo-keyword-pills">
+                  <span>Search Intent</span><span>Long-Tail KWs</span><span>Gap Analysis</span>
+                </div>
+              </div>
+            </li>
+            <li class="seo-check-item" data-index="2">
+              <div class="check-item-header"><span>📲</span> High-Retention Reels &amp; SMO Strategy</div>
+              <div class="seo-details">
+                <p>Short-form video assets styled with retention hook pacing and kinetic subtitle transcription rules.</p>
+                <div class="seo-keyword-pills">
+                  <span>Micro-Hooks</span><span>Retention Loops</span><span>SMO Reach</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="bento-widget widget-seo">
+            <div class="seo-chart-container">
+              <svg class="seo-chart-circle"><circle class="circle-bg" cx="45" cy="45" r="40" /><circle class="circle-progress" cx="45" cy="45" r="40" /></svg>
+              <span class="seo-percentage">97%</span>
+            </div>
+            <div class="seo-widget-middle-text">
+              <h4>Campaign Optimization Rate</h4>
+              <p>97% of organic campaigns hit target key performance indicators within 90 days.</p>
+            </div>
+            <img src="social-analytics.jpg" alt="WebVibe AI Social growth charts" class="bento-seo-img" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <!-- BENTO CARD 2: Custom Web Creation -->
+      <div class="glass-card bento-card col-narrow reveal-fade-up" id="bento-web">
+        <div class="card-top">
+          <div class="card-icon-container">
+            <svg viewBox="0 0 24 24"><path d="M16.5 9.4 12 14.3 7.5 9.4M12 14.3V3m9 13v3c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1v-3"/></svg>
+          </div>
+          <a href="estimator.html" class="card-arrow" aria-label="Estimate Custom Web Creation project scope">
+            <svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+          </a>
+        </div>
+        <div class="card-info">
+          <h3>Custom Web Creation</h3>
+          <p>Ultra-fast loading, fully responsive, zero dependency websites built with modern semantic frameworks to hook users in milliseconds.</p>
+          
+          <div class="bento-widget widget-web">
+            <div class="terminal-header">
+              <div class="terminal-buttons">
+                <span class="btn-dot close"></span>
+                <span class="btn-dot minimize"></span>
+                <span class="btn-dot expand"></span>
+              </div>
+              <div class="terminal-title">WebVibeApp.jsx</div>
+            </div>
+            <div class="terminal-body">
+              <div class="terminal-line-numbers">
+                <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span>
+              </div>
+              <pre class="terminal-code"><code id="code-lines"><div class="code-line"><span class="code-comment">// WebVibe Custom React App</span></div><div class="code-line"><span class="code-keyword">import</span> React <span class="code-keyword">from</span> <span class="code-str">'react'</span>;</div><div class="code-line"><span class="code-keyword">export default function</span> <span class="code-tag">App</span>() {</div><div class="code-line">  <span class="code-keyword">return</span> <span class="code-tag">&lt;div&gt;</span>🚀 Scale Vibe<span class="code-tag">&lt;/div&gt;</span>;</div><div class="code-line">}</div></code></pre>
+            </div>
+          </div>
+          <img src="coding-terminal.jpg" alt="WebVibe Custom Web coding terminal" class="mobile-widget-img" loading="lazy">
+        </div>
+      </div>
+
+      <!-- BENTO CARD 3: Visual Branding -->
+      <div class="glass-card bento-card col-narrow reveal-fade-up" id="bento-branding">
+        <div class="card-top">
+          <div class="card-icon-container">
+            <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <a href="estimator.html" class="card-arrow" aria-label="Estimate Branding project scope">
+            <svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+          </a>
+        </div>
+        <div class="card-info">
+          <h3>Visual Branding</h3>
+          <p>Logos, guidelines, brand voice, and bespoke design kits that establish a solid visual rhythm for your company.</p>
+          
+          <div class="bento-widget widget-branding">
+            <div class="branding-header-row">
+              <div class="color-swatch-picker">
+                <span class="swatch swatch-1" data-color="navy"></span>
+                <span class="swatch swatch-2 active" data-color="gold"></span>
+                <span class="swatch swatch-3" data-color="cyan"></span>
+              </div>
+              <span id="brand-logo-name" class="brand-logo-name">Identity Mark</span>
+            </div>
+            <svg id="branding-preview" class="brand-preview-svg" viewBox="0 0 120 120">
+              <g id="branding-preview-group" stroke="#f1b202" stroke-width="7.5" stroke-linecap="round" fill="none">
+                <path d="M32 78 L52 58 C55 55, 60 55, 63 58 L53 79" />
+                <path d="M88 42 L68 62 C65 65, 60 65, 57 62 L67 41" />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- BENTO CARD 4: Content & Video Editing -->
+      <div class="glass-card bento-card col-wide reveal-fade-up" id="bento-editing">
+        <div class="card-top">
+          <div class="card-icon-container">
+            <svg viewBox="0 0 24 24"><path d="M23 7l-7 5 7 5V7zM1 5h14c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1z"/></svg>
+          </div>
+          <a href="estimator.html" class="card-arrow" aria-label="Estimate Video Editing project scope">
+            <svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+          </a>
+        </div>
+        <div class="card-info">
+          <h3>Cinematic Editing &amp; Assets</h3>
+          <p>TikToks, Reels, YouTube campaigns, and premium graphic assets engineered with high-impact cuts, kinetic subtitles, color grading, and dynamic audio mastering to maximize viewer retention.</p>
+          
+          <div class="bento-widget widget-editing">
+            <div class="video-monitor" id="video-monitor">
+              <div class="monitor-screen">
+                <div class="monitor-overlay-text" id="monitor-text">🎬 Outline: Content Planning</div>
+                <div class="monitor-waveform" id="monitor-waveform">
+                  <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICES FAQ SECTION -->
+  <section class="section-padding" style="background-color: #ffffff; border-top: 2.5px solid #0c254e;">
+    <div class="section-header reveal-fade-up">
+      <span class="section-tag">Services FAQ</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+    </div>
+
+    <div class="faq-container reveal-fade-up" style="max-width: 850px; margin: 0 auto;">
+      <div class="glass-card faq-item">
+        <button class="faq-trigger" aria-expanded="false">
+          <h4>How fast can you show results for SEO &amp; SMO?</h4>
+          <span class="faq-arrow"><svg viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></span>
+        </button>
+        <div class="faq-content">
+          <div class="faq-body">
+            Algorithmic SEO structures usually require 6 to 12 weeks to index fully and gain authority on Google. SMO (Social Media Optimization) gains can show cultural momentum much faster, often triggering viral hooks within 14 to 30 days.
+          </div>
+        </div>
+      </div>
+
+      <div class="glass-card faq-item">
+        <button class="faq-trigger" aria-expanded="false">
+          <h4>What tech stack do you use for website creation?</h4>
+          <span class="faq-arrow"><svg viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></span>
+        </button>
+        <div class="faq-content">
+          <div class="faq-body">
+            We specialize in pure modern standard technologies: highly optimized HTML5 semantic foundations, lightweight CSS layout properties, and modular ES6+ JavaScript, resulting in perfect web audit scores and fast page loading.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="border-top: 2.5px solid #0c254e;">
+    <div class="footer-top">
+      <div class="footer-brand-column">
+        <a href="index.html" class="logo-container" style="margin-bottom: 1.5rem;">
+          <img src="logo-icon.png" alt="WebVibe Icon" class="logo-footer-img" loading="lazy">
+          <span class="logo-footer-text">WebVibe</span>
+        </a>
+        <p class="footer-brand-desc">A premium digital agency engineering high-performance web applications and search dominance frameworks.</p>
+      </div>
+
+      <div class="footer-links-column">
+        <h4>Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="student-portfolio.html">Student Offer 🎓</a></li>
+          <li><a href="estimator.html">Estimator</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact-column">
+        <h4>Contact &amp; Support</h4>
+        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem;">Direct email: webvibe.digitalmarketing@gmail.com</p>
+        <a href="https://api.whatsapp.com/send?phone=916384155212&text=Hi%20WebVibe,%20I%20want%20to%20inquire%20about%20your%20services!" target="_blank" class="btn-primary" style="background-color: #25D366; border-color: var(--color-navy); font-size: 0.85rem; padding: 0.6rem 1.2rem;">Chat on WhatsApp 💬</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 WebVibe Digital. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Icon -->
+  <a href="https://api.whatsapp.com/send?phone=916384155212" class="whatsapp-float" rel="noopener noreferrer" aria-label="Chat with WebVibe on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.704 1.459h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="script.js" defer></script>
+<script src="cms-loader.js"></script>
+</body>
+</html>

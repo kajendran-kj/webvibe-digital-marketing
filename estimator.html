@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Calculate your digital marketing & web development scope with WebVibe's interactive Rupee (INR) budget estimator tool. Custom quotes for SEO, Web Dev, Branding & Editing.">
+  <meta name="keywords" content="webvibe budget estimator, pricing calculator, digital marketing quote, web development cost estimator">
+  <meta name="author" content="WebVibe Digital Marketing">
+  
+  <link rel="canonical" href="https://webvibe.online/estimator.html">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://webvibe.online/estimator.html">
+  <meta property="og:title" content="Scope &amp; Budget Estimator | WebVibe">
+  <meta property="og:description" content="Configure your project scope and calculate retainer valuations dynamically.">
+  <meta property="og:image" content="https://webvibe.online/hero-real-story.jpg">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Scope &amp; Budget Estimator | WebVibe">
+  <meta name="twitter:description" content="Configure your project scope and calculate retainer valuations dynamically.">
+  <meta name="twitter:image" content="https://webvibe.online/hero-real-story.jpg">
+
+  <!-- Favicon setup -->
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  
+  <title>Project Scope &amp; Budget Estimator (INR) | WebVibe</title>
+  
+  <!-- Security Headers -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="preload" href="style.css" as="style">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JSON-LD Structured Data Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Project Scope & Budget Estimator",
+    "description": "Interactive Rupee (INR) Scope Calculator for WebVibe digital marketing and website creation services.",
+    "url": "https://webvibe.online/estimator.html"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Custom Cursor & Canvas Background -->
+  <div class="custom-cursor" id="custom-cursor"></div>
+  <div class="custom-cursor-dot" id="custom-cursor-dot"></div>
+  <canvas id="dot-grid-canvas"></canvas>
+
+  <div class="radial-glows">
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+    <div class="glow-orb glow-orb-3"></div>
+  </div>
+
+  <!-- PREMIUM STICKY HEADER -->
+  <header id="main-header">
+    <a href="index.html" class="logo-container">
+      <img src="logo-full.png" alt="WebVibe Logo" class="logo-img">
+    </a>
+
+    <nav id="nav-menu">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="student-portfolio.html" style="color: var(--color-gold); font-weight: 700;">Student Offer 🎓</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="estimator.html" class="active">Estimator</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-controls">
+        <a href="https://api.whatsapp.com/send?phone=916384155212&text=Hi%20WebVibe,%20I%20want%20a%20quick%20quote%20estimate!" target="_blank" class="btn-primary" style="background-color: #25D366; border-color: var(--color-navy);">Chat on WhatsApp 💬</a>
+      </div>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="estimator-hero">
+    <div class="hero-split-wrapper">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span class="badge-text">Interactive Scope Calculator</span>
+        </div>
+        <h1>
+          <span class="text-gradient">Configure Scope.</span><br>
+          <span class="text-gradient">Estimate Retainer Terms.</span>
+        </h1>
+        <p class="hero-subtitle">
+          Select core services and retainer duration to calculate transparent Rupee (INR) valuations with term discounts.
+        </p>
+
+        <div class="whatsapp-quick-reply-banner" style="margin-top: 1.2rem; background: #25D366; color: #ffffff; padding: 10px 18px; border-radius: 30px; font-weight: 800; font-size: 0.88rem; display: inline-flex; align-items: center; gap: 10px; box-shadow: 3px 3px 0px var(--color-navy); border: 2px solid var(--color-navy);">
+          <span>💬 For quick reply, try WhatsApp!</span>
+          <a href="https://api.whatsapp.com/send?phone=916384155212&text=Hi%20WebVibe,%20I%20want%20an%20instant%20WhatsApp%20quote!" target="_blank" style="color: #ffffff; text-decoration: underline;">Chat Now &rarr;</a>
+        </div>
+      </div>
+
+      <div class="hero-visual-panel">
+        <div class="hero-graphic-card real-photo-frame">
+          <img src="hero-real-story.jpg" alt="WebVibe Agency Studio" class="hero-graphic-img real-story-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE PRICING CALCULATOR SECTION -->
+  <section class="section-padding" id="quote">
+    <div class="section-header reveal-fade-up">
+      <span class="section-tag">Budget Blueprint</span>
+      <h2 class="section-title">Configure Your Project Scope.</h2>
+    </div>
+
+    <div class="pricing-calculator-wrapper reveal-fade-up">
+      
+      <!-- Interactive Inputs -->
+      <div class="glass-card calc-panel">
+        <h3 class="calc-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          Interactive Scope Calculator (INR)
+        </h3>
+        
+        <!-- Step 1: Select services -->
+        <div class="calc-step">
+          <span class="calc-step-label">1. Select Core Services (Multi-select)</span>
+          <div class="service-pills">
+            <span class="service-pill" data-service="SEO &amp; SMO Growth" data-cost="15000">SEO &amp; SMO (+ ₹15,000/mo)</span>
+            <span class="service-pill" data-service="Custom Web Dev" data-cost="35000">Custom Web Dev (+ ₹35,000/mo)</span>
+            <span class="service-pill" data-service="Visual Branding Kits" data-cost="10000">Visual Branding (+ ₹10,000/mo)</span>
+            <span class="service-pill" data-service="Cinematic Video Editing" data-cost="12000">Cinematic Editing (+ ₹12,000/mo)</span>
+          </div>
+        </div>
+
+        <!-- Step 2: Select timeline/months duration -->
+        <div class="calc-step">
+          <span class="calc-step-label">2. Target Retainer Duration</span>
+          <div class="range-slider-container">
+            <input type="range" id="calc-timeline" min="1" max="12" value="1" aria-label="Timeline duration slider">
+            <span class="range-value" id="timeline-val">1 Month</span>
+          </div>
+          <span style="font-size: 0.78rem; color: var(--text-muted); margin-top: 5px; display: block;">💡 Retainer discounts apply at 3 months (10%) and 6+ months (20%)!</span>
+        </div>
+      </div>
+
+      <!-- Live Dynamic Quotation Summary Output -->
+      <div class="glass-card calc-summary-panel">
+        <div class="summary-top">
+          <h3>Scope Summary</h3>
+          <ul class="summary-list">
+            <li class="summary-item">
+              <span class="item-label">Services Selected</span>
+              <span class="item-val" id="sum-services">None selected</span>
+            </li>
+            <li class="summary-item">
+              <span class="item-label">Timeline Terms</span>
+              <span class="item-val" id="sum-duration">1 Month</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="summary-bottom">
+          <div class="summary-price-label">Project Valuation Est.</div>
+          <span class="summary-price" id="calc-price">₹0</span>
+          
+          <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 1rem;">
+            <a href="contact.html" class="btn-primary summary-cta">Request Proposal ⚡</a>
+            <a href="https://api.whatsapp.com/send?phone=916384155212&text=Hi%20WebVibe,%20I%20calculated%20my%20scope%20on%20your%20Estimator%20and%20want%20to%20discuss!" target="_blank" class="btn-primary" style="background-color: #25D366; border-color: var(--color-navy); text-align: center; font-size: 0.88rem;">Send Quote to WhatsApp 💬</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="border-top: 2.5px solid #0c254e;">
+    <div class="footer-top">
+      <div class="footer-brand-column">
+        <a href="index.html" class="logo-container" style="margin-bottom: 1.5rem;">
+          <img src="logo-icon.png" alt="WebVibe Icon" class="logo-footer-img" loading="lazy">
+          <span class="logo-footer-text">WebVibe</span>
+        </a>
+        <p class="footer-brand-desc">A premium digital agency engineering high-performance web applications and search dominance frameworks.</p>
+      </div>
+
+      <div class="footer-links-column">
+        <h4>Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="student-portfolio.html">Student Offer 🎓</a></li>
+          <li><a href="estimator.html">Estimator</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact-column">
+        <h4>Contact &amp; Support</h4>
+        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem;">Direct email: webvibe.digitalmarketing@gmail.com</p>
+        <a href="https://api.whatsapp.com/send?phone=916384155212" target="_blank" class="btn-primary" style="background-color: #25D366; border-color: var(--color-navy); font-size: 0.85rem; padding: 0.6rem 1.2rem;">Chat on WhatsApp 💬</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 WebVibe Digital. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <a href="https://api.whatsapp.com/send?phone=916384155212" class="whatsapp-float" rel="noopener noreferrer" aria-label="Chat with WebVibe on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.704 1.459h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

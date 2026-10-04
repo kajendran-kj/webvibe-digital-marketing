@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WebVibe Student & Professional Portfolio Solution. High-impact custom dynamic websites for MBA students, tech grads, researchers, freshers, and commercial brands. From Classroom to Career.">
+  <meta name="keywords" content="student portfolio website, MBA portfolio, fresher resume website, personal brand website, commercial portfolio, webvibe portfolio offer">
+  <meta name="author" content="WebVibe Digital Marketing">
+  
+  <!-- Favicon setup -->
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  
+  <title>Student &amp; Professional Portfolios | WebVibe Hot Offer — From Classroom to Career</title>
+  
+  <!-- Security Headers -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  
+  <!-- Performance Preload & CSS Stylesheet -->
+  <link rel="preload" href="style.css" as="style">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor & Background Mesh Canvas -->
+  <div class="custom-cursor" id="custom-cursor"></div>
+  <div class="custom-cursor-dot" id="custom-cursor-dot"></div>
+  <canvas id="dot-grid-canvas"></canvas>
+
+  <div class="radial-glows">
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+    <div class="glow-orb glow-orb-3"></div>
+  </div>
+
+  <!-- PREMIUM STICKY HEADER -->
+  <header id="main-header">
+    <a href="index.html#hero" class="logo-container">
+      <img src="logo-full.png" alt="WebVibe Logo" class="logo-img">
+    </a>
+
+    <!-- Navigation links -->
+    <nav id="nav-menu">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="student-portfolio.html" class="active">Student Offer 🎓</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="estimator.html">Estimator</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-controls">
+        <a href="https://api.whatsapp.com/send?phone=916384155212&text=Hi%20WebVibe,%20I%20am%20interested%20in%20a%20Portfolio!" target="_blank" class="btn-primary" style="background-color: #25D366; border-color: var(--color-navy);">Chat on WhatsApp 💬</a>
+      </div>
+    </nav>
+
+    <!-- Mobile menu toggle -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- HERO SECTION: STORYTELLING REAL-LIFE PHOTOGRAPHY -->
+  <section class="hero student-hero-section" id="hero-offer">
+    <div class="hero-split-wrapper">
+      
+      <!-- Text content left -->
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span class="badge-text">From Classroom to Career 🎓</span>
+        </div>
+        <h1>
+          <span class="text-gradient">Get Noticed: Your</span><br>
+          <span class="text-gradient">Professional Portfolio.</span>
+        </h1>
+        <p class="hero-subtitle">
+          Showcase your skills, projects, and story with a high-impact dynamic portfolio website that opens new career opportunities and elevates your personal brand.
+        </p>
+        
+        <!-- Target Audience Pills -->
+        <div class="audience-pills">
+          <span class="pill-item">✨ MBA &amp; Management</span>
+          <span class="pill-item">💻 Tech &amp; Engineering</span>
+          <span class="pill-item">🎨 Designers &amp; Creatives</span>
+          <span class="pill-item">🔬 Researchers &amp; Freshers</span>
+          <span class="pill-item">💼 Commercial Freelancers</span>
+        </div>
+
+        <!-- Quick Reply WhatsApp Banner -->
+        <div class="whatsapp-quick-reply-banner" style="margin-top: 1.2rem; background: #25D366; color: #ffffff; padding: 10px 18px; border-radius: 30px; font-weight: 800; font-size: 0.88rem; display: inline-flex; align-items: center; gap: 10px; box-shadow: 3px 3px 0px var(--color-navy); border: 2px solid var(--color-navy);">
+          <span>💬 For quick reply, try WhatsApp!</span>
+          <a href="https://api.whatsapp.com/send?phone=916384155212&text=Hi%20WebVibe,%20I%20want%20a%20quick%20reply%20regarding%20Student%20%26%20Professional%20Portfolios!" target="_blank" style="color: #ffffff; text-decoration: underline;">Chat Now &rarr;</a>
+        </div>
+
+        <div class="hero-cta" style="margin-top: 1.8rem;">
+          <a href="https://api.whatsapp.com/send?phone=916384155212&text=Hi%20WebVibe,%20I%20am%20interested%20in%20your%20Student%20%26%20Professional%20Portfolio%20packages!" target="_blank" class="btn-primary" style="background-color: #25D366; border-color: var(--color-navy);">Chat on WhatsApp 🚀</a>
+          <a href="#samples" class="btn-secondary">View Live Samples 🌐</a>
+        </div>
+      </div>
+      
+      <!-- Real-Life Storytelling Photography Panel -->
+      <div class="hero-visual-panel">
+        <div class="hero-graphic-card real-photo-frame">
+          <img src="student-hero.jpg" alt="Student preparing professional portfolio website" class="hero-graphic-img real-story-img" loading="eager">
+          <div class="photo-story-caption">
+            <span>💡 "Ideas • Skills • Portfolio • Career"</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- KEY VALUE DRIVERS GRID -->
+  <section class="section-padding" id="value-pillars">
+    <div class="section-header reveal-fade-up">
+      <span class="section-tag">Why You Need A Web Portfolio</span>
+      <h2 class="section-title">Built to Accelerate Your Career &amp; Growth.</h2>
+    </div>
+
+    <div class="dashboard-grid reveal-fade-up" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
+      
+      <div class="glass-card value-pillar-card">
+        <div class="pillar-icon">💼</div>
+        <h3>Stand Out in Job Applications</h3>
+        <p>Replace static paper resumes. Give hiring managers an interactive link that immediately highlights your real-world capability.</p>
+      </div>
+
+      <div class="glass-card value-pillar-card">
+        <div class="pillar-icon">📊</div>
+        <h3>Showcase Skills &amp; Projects</h3>
+        <p>Display capstone work, case studies, academic accomplishments, and certificates with rich interactive galleries.</p>
+      </div>
+
+      <div class="glass-card value-pillar-card">
+        <div class="pillar-icon">🌐</div>
+        <h3>Build Your Professional Network</h3>
+        <p>Connect your LinkedIn, GitHub, Behance, and direct inquiry forms in a single unified personal hub.</p>
+      </div>
+
+      <div class="glass-card value-pillar-card">
+        <div class="pillar-icon">⭐</div>
+        <h3>Craft A Lasting Personal Brand</h3>
+        <p>Establish long-term digital authority and stand out as a top-tier candidate in your industry.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CATEGORY SELECTOR: PERSONAL VS COMMERCIAL -->
+  <section class="section-padding" id="categories" style="background-color: #ffffff; border-top: 2.5px solid #0c254e; border-bottom: 2.5px solid #0c254e;">
+    <div class="section-header reveal-fade-up">
+      <span class="section-tag">Tailored Categories</span>
+      <h2 class="section-title">Personal &amp; Commercial Solutions</h2>
+      <p style="color: var(--text-secondary); max-width: 650px; margin: 0.8rem auto 0 auto;">Whether you are an individual student launching your career or a commercial brand growing your business, we build bespoke dynamic web solutions.</p>
+    </div>
+
+    <div class="category-grid reveal-fade-up">
+      
+      <!-- Category 1: Personal Portfolios -->
+      <div class="glass-card category-card active-cat">
+        <div class="category-header-badge">PERSONAL PORTFOLIOS</div>
+        <h3>For Students, Freshers &amp; Career Professionals</h3>
+        <p>Tailored for MBA candidates, engineering grads, researchers, designers, and ambitious job seekers who want to showcase academic projects and stand out to top recruiters.</p>
+        <ul class="cat-feature-list">
+          <li>✔ Personal Bio &amp; About Section</li>
+          <li>✔ Academic &amp; Capstone Project Showcase</li>
+          <li>✔ Interactive Skills &amp; Certifications Matrix</li>
+          <li>✔ One-Click Resume Download &amp; LinkedIn Link</li>
+          <li>✔ Personalized Custom Domain Integration</li>
+        </ul>
+        <a href="#packages" class="btn-primary" style="margin-top: 1.5rem; display: inline-block;">View Personal Packages 🚀</a>
+      </div>
+
+      <!-- Category 2: Commercial Portfolios -->
+      <div class="glass-card category-card">
+        <div class="category-header-badge commercial-badge">COMMERCIAL PORTFOLIOS</div>
+        <h3>For Freelancers, Consultants &amp; Agencies</h3>
+        <p>Designed for independent consultants, creative freelancers, boutique agencies, and small businesses looking to showcase services, client testimonials, and capture high-paying leads.</p>
+        <ul class="cat-feature-list">
+          <li>✔ Commercial Services Catalog &amp; Deliverables</li>
+          <li>✔ Client Case Studies &amp; Success Metrics</li>
+          <li>✔ Interactive Quotation &amp; Lead Capture Form</li>
+          <li>✔ Google Analytics &amp; SEO Search Indexing</li>
+          <li>✔ Custom Branding &amp; Corporate Identity Kit</li>
+        </ul>
+        <a href="#packages" class="btn-secondary" style="margin-top: 1.5rem; display: inline-block;">View Commercial Packages ⚡</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PORTFOLIO PACKAGES SHOWCASE (STARTER, PROFESSIONAL, PREMIUM) -->
+  <section class="section-padding" id="packages">
+    <div class="section-header reveal-fade-up">
+      <span class="section-tag">Our Packages</span>
+      <h2 class="section-title">OUR PORTFOLIO PACKAGES</h2>
+      <p style="color: var(--text-secondary); max-width: 600px; margin: 0.5rem auto 0 auto; font-weight: 600;">Affordable. Professional. Built for Your Growth.</p>
+    </div>
+
+    <div class="bento-grid packages-grid reveal-fade-up">
+      
+      <!-- PACKAGE 1: STARTER -->
+      <div class="glass-card package-card bento-card">
+        <div class="package-header">
+          <div class="package-icon">✈️</div>
+          <h3>STARTER</h3>
+          <span class="package-subtitle">Static Portfolio (Single Page)</span>
+        </div>
+        
+        <div class="package-dynamic-note">
+          <span>⚡ Custom Dynamic Website Package</span>
+        </div>
+
+        <ul class="package-checklist">
+          <li>✔ Single page professional design</li>
+          <li>✔ Personal profile &amp; about section</li>
+          <li>✔ Skills, education &amp; achievements</li>
+          <li>✔ Project showcase (up to 5 projects)</li>
+          <li>✔ Contact form integration</li>
+          <li>✔ Mobile &amp; desktop responsive</li>
+        </ul>
+
+        <div class="package-footer">
+          <a href="https://api.whatsapp.com/send?phone=916384155212&text=Hi%20WebVibe,%20I%20am%20interested%20in%20the%20STARTER%20Single-Page%20Portfolio%20Package!" target="_blank" class="btn-primary package-btn" style="background-color: #25D366; border-color: var(--color-navy);">Request Quote on WhatsApp 💬</a>
+        </div>
+      </div>
+
+      <!-- PACKAGE 2: PROFESSIONAL (MOST POPULAR) -->
+      <div class="glass-card package-card bento-card popular-package">
+        <div class="popular-ribbon">⭐ Most Popular</div>
+        <div class="package-header">
+          <div class="package-icon">👑</div>
+          <h3>PROFESSIONAL</h3>
+          <span class="package-subtitle">Dynamic Portfolio (Multi Page)</span>
+        </div>
+        
+        <div class="package-dynamic-note">
+          <span>⚡ Custom Multi-Page Dynamic Solution</span>
+        </div>
+
+        <ul class="package-checklist">
+          <li>✔ Multi-page professional website</li>
+          <li>✔ Custom UI/UX bespoke design</li>
+          <li>✔ Dedicated pages (About, Projects, Case Studies, Leadership, Blog)</li>
+          <li>✔ Interactive project showcases</li>
+          <li>✔ Contact form + social links</li>
+          <li>✔ SEO basic setup &amp; indexing</li>
+          <li>✔ Mobile &amp; desktop responsive</li>
+        </ul>
+
+        <div class="package-footer">
+          <a href="https://api.whatsapp.com/send?phone=916384155212&text=Hi%20WebVibe,%20I%20am%20interested%20in%20the%20PROFESSIONAL%20Multi-Page%20Portfolio%20Package!" target="_blank" class="btn-primary package-btn" style="background-color: #25D366; border-color: var(--color-navy);">Request Quote on WhatsApp 💬</a>
+        </div>
+      </div>
+
+      <!-- PACKAGE 3: PREMIUM -->
+      <div class="glass-card package-card bento-card">
+        <div class="package-header">
+          <div class="package-icon">💎</div>
+          <h3>PREMIUM</h3>
+          <span class="package-subtitle">Multi-Page Portfolio with Advanced Features</span>
+        </div>
+        
+        <div class="package-dynamic-note">
+          <span>⚡ Advanced Enterprise Dynamic Solution</span>
+        </div>
+
+        <ul class="package-checklist">
+          <li>✔ Everything included in Professional</li>
+          <li>✔ Custom animations &amp; interactive UI</li>
+          <li>✔ Case study &amp; project templates</li>
+          <li>✔ Blog/Articles section (for thought leadership)</li>
+          <li>✔ Analytics integration &amp; metric tracking</li>
+          <li>✔ Personalized domain setup support</li>
+          <li>✔ Priority technical support (30 days)</li>
+        </ul>
+
+        <div class="package-footer">
+          <a href="https://api.whatsapp.com/send?phone=916384155212&text=Hi%20WebVibe,%20I%20am%20interested%20in%20the%20PREMIUM%20Advanced%20Portfolio%20Package!" target="_blank" class="btn-primary package-btn" style="background-color: #25D366; border-color: var(--color-navy);">Request Quote on WhatsApp 💬</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- TRUST BADGES BAR -->
+    <div class="trust-badges-bar reveal-fade-up" style="margin-top: 4rem;">
+      <div class="badge-item">
+        <span class="badge-icon">🚚</span>
+        <div class="badge-info">
+          <strong>Fast Delivery</strong>
+          <span>3–5 Business Days</span>
+        </div>
+      </div>
+      <div class="badge-item">
+        <span class="badge-icon">🛡️</span>
+        <div class="badge-info">
+          <strong>100% Satisfaction</strong>
+          <span>Quality Guarantee</span>
+        </div>
+      </div>
+      <div class="badge-item">
+        <span class="badge-icon">🎧</span>
+        <div class="badge-info">
+          <strong>Ongoing Support</strong>
+          <span>Dedicated Assistance</span>
+        </div>
+      </div>
+      <div class="badge-item">
+        <span class="badge-icon">⚙️</span>
+        <div class="badge-info">
+          <strong>100% Customizable</strong>
+          <span>As per your unique needs</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIVE SAMPLES SHOWCASE SECTION -->
+  <section class="section-padding" id="samples" style="background-color: #ffffff; border-top: 2.5px solid #0c254e; border-bottom: 2.5px solid #0c254e;">
+    <div class="section-header reveal-fade-up">
+      <span class="section-tag">Portfolio Previews</span>
+      <h2 class="section-title">Explore Live Sample Designs</h2>
+      <p style="color: var(--text-secondary); max-width: 600px; margin: 0.5rem auto 0 auto;">See how our custom dynamic portfolios look in real life on desktop and mobile screens.</p>
+    </div>
+
+    <div class="projects-grid reveal-fade-up">
+      
+      <!-- Sample 1: Personal Student Portfolio -->
+      <div class="glass-card project-card">
+        <div class="project-image-container">
+          <img src="sample-personal.jpg" alt="Personal Student & Professional Portfolio Live Sample" class="project-img" loading="lazy">
+        </div>
+        <div class="project-details-panel">
+          <span class="project-category">Personal Portfolio</span>
+          <h4>Academic &amp; Career Portfolio</h4>
+          <p>Clean modern layout showcasing personal bio, skills badges, capstone project highlights, and resume download link.</p>
+          <a href="https://api.whatsapp.com/send?phone=916384155212&text=Hi%20WebVibe,%20I%20would%20like%20to%20see%20live%20samples%20for%20Personal%20Academic%20%26%20Career%20Portfolios!" target="_blank" class="project-link" style="color: #25D366; font-weight: 800;">
+            <span>Get Live Sample on WhatsApp 💬</span>
+            <svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Sample 2: Commercial Agency & Consultant Portfolio -->
+      <div class="glass-card project-card">
+        <div class="project-image-container">
+          <img src="sample-commercial.jpg" alt="Commercial Agency & Consultant Portfolio Live Sample" class="project-img" loading="lazy">
+        </div>
+        <div class="project-details-panel">
+          <span class="project-category">Commercial Portfolio</span>
+          <h4>Commercial Brand &amp; Freelancer Hub</h4>
+          <p>Sleek responsive design built to highlight services, case study results, client testimonials, and capture inquiries.</p>
+          <a href="https://api.whatsapp.com/send?phone=916384155212&text=Hi%20WebVibe,%20I%20would%20like%20to%20see%20live%20samples%20for%20Commercial%20Brand%20%26%20Freelancer%20Portfolios!" target="_blank" class="project-link" style="color: #25D366; font-weight: 800;">
+            <span>Get Live Sample on WhatsApp 💬</span>
+            <svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TERMS AND CONDITIONS SECTION (AT BOTTOM) -->
+  <section class="section-padding" id="terms">
+    <div class="section-header reveal-fade-up">
+      <span class="section-tag">Project Terms</span>
+      <h2 class="section-title">Terms &amp; Conditions</h2>
+      <p style="color: var(--text-secondary); max-width: 650px; margin: 0.5rem auto 0 auto;">Transparent delivery guidelines and service parameters for all WebVibe portfolio packages.</p>
+    </div>
+
+    <div class="faq-container reveal-fade-up" style="max-width: 850px; margin: 0 auto;">
+      
+      <div class="glass-card faq-item">
+        <button class="faq-trigger" aria-expanded="false">
+          <h4>1. Dynamic Website Customization Scope</h4>
+          <span class="faq-arrow"><svg viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></span>
+        </button>
+        <div class="faq-content">
+          <div class="faq-body">
+            All portfolio packages are engineered as custom responsive websites tailored to individual requirements. Advanced custom integrations (such as e-commerce checkout, custom backend databases, or complex web APIs) outside the standard scope will be quoted transparently prior to development.
+          </div>
+        </div>
+      </div>
+
+      <div class="glass-card faq-item">
+        <button class="faq-trigger" aria-expanded="false">
+          <h4>2. Content &amp; Media Asset Submission</h4>
+          <span class="faq-arrow"><svg viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></span>
+        </button>
+        <div class="faq-content">
+          <div class="faq-body">
+            To guarantee our 3–5 business day delivery window, clients are requested to provide their personal profile bio, project details, resume copy, high-resolution photographs, and social media links within 48 hours of project kickoff.
+          </div>
+        </div>
+      </div>
+
+      <div class="glass-card faq-item">
+        <button class="faq-trigger" aria-expanded="false">
+          <h4>3. Domain Registration &amp; Hosting Setup</h4>
+          <span class="faq-arrow"><svg viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></span>
+        </button>
+        <div class="faq-content">
+          <div class="faq-body">
+            WebVibe provides complete setup assistance for linking custom domains (e.g. `yourname.com` or `webvibe.online`) and deploying to high-speed cloud hosting platforms (such as Netlify or Vercel). Third-party domain registrar fees or external server hosting plans (if requested) are managed directly with the respective domain providers.
+          </div>
+        </div>
+      </div>
+
+      <div class="glass-card faq-item">
+        <button class="faq-trigger" aria-expanded="false">
+          <h4>4. Design Revisions &amp; Quality Guarantee</h4>
+          <span class="faq-arrow"><svg viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></span>
+        </button>
+        <div class="faq-content">
+          <div class="faq-body">
+            Each portfolio project includes up to 2 rounds of design revisions during the staging period to refine layout preferences, text alignment, and color palette. Additional revision cycles can be requested under post-delivery retainers.
+          </div>
+        </div>
+      </div>
+
+      <div class="glass-card faq-item">
+        <button class="faq-trigger" aria-expanded="false">
+          <h4>5. Post-Launch Technical Support</h4>
+          <span class="faq-arrow"><svg viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></span>
+        </button>
+        <div class="faq-content">
+          <div class="faq-body">
+            Professional and Premium packages include 30 days of complimentary post-launch technical support to answer operational questions, adjust minor text entries, and ensure smooth functionality across all mobile and desktop browsers.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT & LEAD CAPTURE SECTION -->
+  <section class="section-padding" id="contact" style="border-top: 2.5px solid #0c254e;">
+    <div class="contact-section-wrapper">
+      
+      <!-- Info Left Column -->
+      <div class="contact-info-panel reveal-fade-up">
+        <div>
+          <span class="section-tag">Get Started</span>
+          <h2 class="section-title" style="margin-bottom: 1.5rem;">Build Your Success Story.</h2>
+          <p class="contact-info-desc">Ready to launch your personal or commercial portfolio website? Fill out the inquiry form below or chat directly with our team on WhatsApp.</p>
+          
+          <ul class="contact-details">
+            <li class="contact-detail-item">
+              <div class="detail-icon" style="background-color: #25D366; color: #ffffff;">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.704 1.459h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </div>
+              <div class="detail-text">
+                <h5>Primary Lead Channel (WhatsApp)</h5>
+                <p><a href="https://api.whatsapp.com/send?phone=916384155212&text=Hi%20WebVibe,%20I%20want%20to%20discuss%20a%20Portfolio%20project!" target="_blank" class="contact-email-link" style="color: #25D366; font-weight: 800;">+91 6384155212 (⚡ Instant Quick Reply)</a></p>
+              </div>
+            </li>
+            <li class="contact-detail-item">
+              <div class="detail-icon">
+                <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zM22 6l-10 7L2 6"/></svg>
+              </div>
+              <div class="detail-text">
+                <h5>Email Us Directly</h5>
+                <p><a href="mailto:webvibe.digitalmarketing@gmail.com" class="contact-email-link">webvibe.digitalmarketing@gmail.com</a></p>
+              </div>
+            </li>
+            <li class="contact-detail-item">
+              <div class="detail-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              </div>
+              <div class="detail-text">
+                <h5>Website</h5>
+                <p><a href="https://webvibe.online" class="contact-email-link" target="_blank">www.webvibe.online</a></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Lead capture form card -->
+      <div class="glass-card contact-form-panel reveal-fade-up">
+        <h3 class="contact-form-title">Request Portfolio Proposal</h3>
+        
+        <!-- Quick Reply WhatsApp Banner inside Form -->
+        <div style="background-color: rgba(37,211,102,0.12); border: 1.5px solid #25D366; padding: 10px 14px; border-radius: 12px; margin-bottom: 1.2rem; font-size: 0.85rem; color: var(--color-navy); display: flex; align-items: center; justify-content: space-between; gap: 8px;">
+          <span>⚡ <strong>For quick reply, try WhatsApp!</strong></span>
+          <a href="https://api.whatsapp.com/send?phone=916384155212&text=Hi%20WebVibe,%20I%20want%20a%20quick%20reply%20for%20my%20Portfolio%20project!" target="_blank" class="btn-primary" style="background-color: #25D366; border-color: var(--color-navy); padding: 5px 12px; font-size: 0.78rem; text-transform: none;">Chat Now 💬</a>
+        </div>
+
+        <form id="lead-contact-form" novalidate>
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+          
+          <div class="form-grid">
+            <div class="form-group">
+              <input type="text" id="contact-name" name="name" class="form-input" placeholder=" " required>
+              <label for="contact-name" class="form-label">Full Name *</label>
+              <span class="form-status">This field is required.</span>
+            </div>
+            <div class="form-group">
+              <input type="email" id="contact-email" name="email" class="form-input" placeholder=" " required>
+              <label for="contact-email" class="form-label">Email Address *</label>
+              <span class="form-status">Please enter a valid email address.</span>
+            </div>
+            <div class="form-group">
+              <input type="text" id="contact-company" name="company" class="form-input" placeholder=" ">
+              <label for="contact-company" class="form-label">Institution / Business Name</label>
+            </div>
+            <div class="form-group">
+              <input type="text" id="contact-service" name="service" class="form-input" value="Student & Professional Portfolio" placeholder=" ">
+              <label for="contact-service" class="form-label">Desired Portfolio Package</label>
+            </div>
+            <div class="form-group col-full">
+              <textarea id="contact-msg" name="message" class="form-input" placeholder=" " required></textarea>
+              <label for="contact-msg" class="form-label">Tell us about your background &amp; goals... *</label>
+              <span class="form-status">This field is required.</span>
+            </div>
+          </div>
+          
+          <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem;">
+            <button type="submit" class="btn-primary form-submit-btn" style="flex: 1; min-width: 200px;">Request Free Proposal ⚡</button>
+            <a href="https://api.whatsapp.com/send?phone=916384155212&text=Hi%20WebVibe,%20I%20am%20submitting%20a%20Portfolio%20inquiry!" target="_blank" class="btn-primary" style="background-color: #25D366; border-color: var(--color-navy); flex: 1; min-width: 200px; text-align: center; justify-content: center; display: inline-flex; align-items: center;">Instant WhatsApp Inquiry 💬</a>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TRANSMISSION POPUP TOAST -->
+  <div class="toast-container">
+    <div class="toast" id="success-toast" role="alert" aria-live="polite">
+      <div class="toast-icon">
+        <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+      </div>
+      <div class="toast-details">
+        <h4>Request Transmitted!</h4>
+        <p>Your portfolio details have been submitted. Our team will contact you shortly.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEMANTIC FOOTER -->
+  <footer style="border-top: 2.5px solid #0c254e;">
+    <div class="footer-top">
+      <div class="footer-brand-column">
+        <a href="index.html" class="logo-container" style="margin-bottom: 1.5rem;">
+          <img src="logo-icon.png" alt="WebVibe Handshake Icon" class="logo-footer-img" loading="lazy">
+          <span class="logo-footer-text">WebVibe</span>
+        </a>
+        <p class="footer-brand-desc">Engineering performant dynamic portfolio websites and search dominance frameworks. Crafting your first impression online.</p>
+      </div>
+
+      <div class="footer-links-column">
+        <h4>Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home Page</a></li>
+          <li><a href="index.html#services">Services Catalog</a></li>
+          <li><a href="#packages">Portfolio Offer</a></li>
+          <li><a href="#samples">Live Samples</a></li>
+          <li><a href="#terms">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-column">
+        <h4>Portfolio Types</h4>
+        <ul class="footer-links">
+          <li><a href="#categories">Student &amp; MBA Portfolios</a></li>
+          <li><a href="#categories">Fresher Resume Websites</a></li>
+          <li><a href="#categories">Personal Brand Sites</a></li>
+          <li><a href="#categories">Commercial Freelancer Hubs</a></li>
+          <li><a href="#categories">Agency Portfolios</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact-column">
+        <h4>Contact &amp; Support</h4>
+        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem;">Direct inquiries: webvibe.digitalmarketing@gmail.com</p>
+        <a href="#contact" class="btn-primary" style="display: inline-block; font-size: 0.85rem; padding: 0.6rem 1.2rem;">Launch Your Portfolio ⚡</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 WebVibe Digital. All Rights Reserved. Crafted for Your First Impression.</p>
+      <div class="footer-bottom-links">
+        <a href="index.html">Privacy Policy</a>
+        <a href="#terms">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Icon -->
+  <a href="https://api.whatsapp.com/send?phone=916384155212" class="whatsapp-float" rel="noopener noreferrer" aria-label="Chat with WebVibe on WhatsApp">
+    <svg viewBox="0 0 24 24">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.704 1.459h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- Core Javascript Interactions -->
+  <script src="script.js" defer></script>
+</body>
+</html>
